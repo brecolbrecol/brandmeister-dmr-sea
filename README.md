@@ -1,4 +1,18 @@
-# Brandmeister bridge to mumble
+# Forked README.md
+
+This repo is forked because EA4GAX and I realised original repo setup steps are no longer working.
+
+We tried to fix them here and, at least, we were able to build docker containers and run it.
+
+0. Clone this repository with `git clone --recurse-submodules -j8 https://github.com/brecolbrecol/brandmeister-dmr-sea.git` to make sure
+1. Copy the config file from `config/config_example.json` to `config/config.json` and fill in the required information. Note that you will have to ask the Brandmeister administrator of your country for a Simple External Application.
+2. Build the docker container with `./build.sh`
+3. Start the docker container with `./start.sh`
+
+
+# Original README.md
+
+## Brandmeister bridge to mumble
 
 Stream Brandmeister DMR calls using the Simple External Application
 protocol. This connects a BrandMeister
