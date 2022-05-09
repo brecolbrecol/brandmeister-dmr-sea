@@ -43,7 +43,7 @@ RUN pip install bitarray bitstring
 RUN gem install mumble-ruby
 
 WORKDIR /app
-COPY --from=callrecbuilder /go/callrec .
+COPY --from=callrecbuilder /go/bin/callrec .
 COPY --from=md380builder /md380tools/emulator/md380-emu .
 
 COPY src .
