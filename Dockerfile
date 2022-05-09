@@ -4,7 +4,7 @@
 FROM golang AS callrecbuilder
 
 WORKDIR /go
-RUN go get github.com/brecolbrecol/callrec@latest
+RUN go install github.com/brecolbrecol/callrec@latest
 RUN go build github.com/brecolbrecol/callrec
 
 
